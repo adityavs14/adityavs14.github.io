@@ -295,8 +295,14 @@ Hover logic for Component 4
     .comp1 [class*="timeline__text--right"] {
         display: none;
     }
+    .comp1:hover {
+        max-width:80%;
+    }
     .comp2 [class*="timeline__text--left"] {
         display: none;
+    }
+    .comp2:hover {
+        max-width:80%;
     }
     .comp2 [class*="timeline__text--right"] {
         text-align: left;
@@ -304,8 +310,14 @@ Hover logic for Component 4
     .comp3 [class*="timeline__text--right"] {
         display: none;
     }
+    .comp3:hover {
+        max-width:80%;
+    }
     .comp4 [class*="timeline__text--left"] {
         display: none;
+    }
+    .comp4:hover {
+        max-width:80%;
     }
     .comp4 [class*="timeline__text--right"] {
         text-align: left;
