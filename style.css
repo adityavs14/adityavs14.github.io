@@ -266,14 +266,14 @@ Hover logic for Component 4
         margin: 0 auto;
         max-width: 600px;
         display: grid;
-        grid-template-columns: 3px 3px 2fr;
+        grid-template-columns: 3px 3px 1fr;
         color: #000000;
     }
     .comp2 {
         margin: 0 auto;
         max-width: 600px;
         display: grid;
-        grid-template-columns: 2fr 3px 3px;
+        grid-template-columns: 1fr 3px 3px;
         direction: rtl;
         color: #000000;
     }
@@ -281,14 +281,14 @@ Hover logic for Component 4
         margin: 0 auto;
         max-width: 600px;
         display: grid;
-        grid-template-columns: 3px 3px 2fr;
+        grid-template-columns: 3px 3px 1fr;
         color: #000000;
     }
     .comp4 {
         margin: 0 auto;
         max-width: 600px;
         display: grid;
-        grid-template-columns: 2fr 3px 3px;
+        grid-template-columns: 1fr 3px 3px;
         direction: rtl;
         color: #000000;
     }
@@ -296,13 +296,13 @@ Hover logic for Component 4
         display: none;
     }
     .comp1:hover {
-        max-width:80%;
+        max-width: 600px;
     }
     .comp2 [class*="timeline__text--left"] {
         display: none;
     }
     .comp2:hover {
-        max-width:80%;
+        max-width: 600px;
     }
     .comp2 [class*="timeline__text--right"] {
         text-align: left;
@@ -311,13 +311,13 @@ Hover logic for Component 4
         display: none;
     }
     .comp3:hover {
-        max-width:80%;
+        max-width: 600px;
     }
     .comp4 [class*="timeline__text--left"] {
         display: none;
     }
     .comp4:hover {
-        max-width:80%;
+        max-width: 600px;
     }
     .comp4 [class*="timeline__text--right"] {
         text-align: left;
