@@ -287,6 +287,7 @@ Hover logic for Component 4
     padding: 10px;
     margin: 10px;
 
+
 }
 .proj1 p{
     width:300px;
@@ -295,6 +296,7 @@ Hover logic for Component 4
 .proj1:hover {
     outline: #000000 solid 5px;
     transition: 0.1s;
+    box-shadow: 10px 5px 5px grey;
 }
 
 
