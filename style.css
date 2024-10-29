@@ -290,8 +290,8 @@ Hover logic for Component 4
 
 }
 .proj1 p{
-    width:300px;
-    height: 600px;
+    width:200px;
+    height: 500px;
 }
 .proj1:hover {
     outline: #000000 solid 5px;
