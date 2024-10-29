@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f9f5eb;
+    color: #000000;
+    justify-content: center;
+    padding: 20px;
+}
+
+.aboutcontainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    display: block;
+}
+
+.profile-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.intro, .description {
+    font-size: 1em;
+    color: #000000;
+    margin-bottom: 20px;
+
+}
+
+.experience {
+    margin-top: 40px;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.timeline__component{
+    margin: 0 20px 20px 20px;
+}
+
+.timeline__text--right{
+    text-align: right;
+}
+
+
+.timeline__middle{
+    position:relative;
+    background: black;
+}
+
+.timeline__point{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15px;
+    height: 15px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+
+
+/* Hover logic for component 1 */
+
+.comp1 {
+    margin: 0 auto;
+    max-width: 600px;
+    grid-template-columns: 1fr 3px 1fr;
+    display: grid;
+    color: #000000;
+}
+.comp1 p{
+    display: none;
+}
+.comp1 h3{
+    font-weight: 100;
+}
+.comp1 h5{
+    font-weight: 100;
+}
+
+.comp1:hover {
+    max-width: 1000px;
+}
+.comp1:hover h3{
+    font-weight: bold;
+    font-size: 1.8em;
+    transition: 0.2s ease;
+}
+.comp1:hover h5{
+    font-size: 1.0em;
+    font-weight:bold;
+    transition: 0.2s ease;
+}
+.comp1:hover p{
+    display: block;
+    transition: 1s ease;
+}
+
+.comp1:hover .timeline__text--right{
+    font-size: 1.8em;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+
+
+/* 
+Hover logic for Component 2
+ */
+
+.comp2 {
+    margin: 0 auto;
+    max-width: 600px;
+    grid-template-columns: 1fr 3px 1fr;
+    display: grid;
+    color: #000000;
+}
+.comp2 p{
+    display: none;
+}
+.comp2 h3{
+    font-weight: 100;
+}
+.comp2 h5{
+    font-weight: 100;
+}
+
+.comp2:hover {
+    max-width: 1000px;
+}
+.comp2:hover h3{
+    font-weight: bold;
+    font-size: 1.8em;
+    transition: 0.2s;
+}
+.comp2:hover h5{
+    font-size: 1.0em;
+    font-weight:bold;
+    transition: 0.2s;
+}
+.comp2:hover p{
+    display: block;
+    transition: 2s;
+}
+.comp2:hover .timeline__text--left{
+    font-size: 1.8em;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+
+
+/* Hover logic for component 3 */
+.comp3 {
+    margin: 0 auto;
+    max-width: 600px;
+    grid-template-columns: 1fr 3px 1fr;
+    display: grid;
+    color: #000000;
+}
+.comp3 p{
+    display: none;
+}
+.comp3 h3{
+    font-weight: 100;
+}
+.comp3 h5{
+    font-weight: 100;
+}
+
+.comp3:hover {
+    max-width: 1000px;
+}
+.comp3:hover h3{
+    font-weight: bold;
+    font-size: 1.8em;
+    transition: 0.2s;
+}
+.comp3:hover h5{
+    font-size: 1.0em;
+    font-weight:bold;
+    transition: 0.2s;
+}
+.comp3:hover p{
+    display: block;
+    transition: 2s;
+}
+.comp3:hover .timeline__text--right{
+    font-size: 1.8em;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+
+/* 
+Hover logic for Component 4
+ */
+
+ .comp4 {
+    margin: 0 auto;
+    max-width: 600px;
+    grid-template-columns: 1fr 3px 1fr;
+    display: grid;
+    color: #000000;
+}
+.comp4 p{
+    display: none;
+}
+.comp4 h3{
+    font-weight: 100;
+}
+.comp4 h5{
+    font-weight: 100;
+}
+
+.comp4:hover {
+    max-width: 1000px;
+}
+.comp4:hover h3{
+    font-weight: bold;
+    font-size: 1.8em;
+    transition: 0.2s;
+}
+.comp4:hover h5{
+    font-size: 1.0em;
+    font-weight:bold;
+    transition: 0.2s;
+}
+.comp4:hover p{
+    display: block;
+    transition: 2s;
+}
+.comp4:hover .timeline__text--left{
+    font-size: 1.8em;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+
+@media only screen and (max-width: 768px)
+{
+    .comp1 {
+        margin: 0 auto;
+        max-width: 600px;
+        display: grid;
+        grid-template-columns: 3px 3px 2fr;
+        color: #000000;
+    }
+    .comp2 {
+        margin: 0 auto;
+        max-width: 600px;
+        display: grid;
+        grid-template-columns: 2fr 3px 3px;
+        direction: rtl;
+        color: #000000;
+    }
+    .comp3 {
+        margin: 0 auto;
+        max-width: 600px;
+        display: grid;
+        grid-template-columns: 3px 3px 2fr;
+        color: #000000;
+    }
+    .comp4 {
+        margin: 0 auto;
+        max-width: 600px;
+        display: grid;
+        grid-template-columns: 2fr 3px 3px;
+        direction: rtl;
+        color: #000000;
+    }
+    .comp1 [class*="timeline__text--right"] {
+        display: none;
+    }
+    .comp2 [class*="timeline__text--left"] {
+        display: none;
+    }
+    .comp2 [class*="timeline__text--right"] {
+        text-align: left;
+    }
+    .comp3 [class*="timeline__text--right"] {
+        display: none;
+    }
+    .comp4 [class*="timeline__text--left"] {
+        display: none;
+    }
+    .comp4 [class*="timeline__text--right"] {
+        text-align: left;
+    }
+}
