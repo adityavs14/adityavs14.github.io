@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --bg-color: #000000;
   --text-color: #dfdfdf;
   --nav-color: #222222;
@@ -11,48 +11,25 @@ body.light-mode {
   --bg-color: #f5f5f5;
   --text-color: #1a1a1a;
   --nav-color: #ffffff;
-  --link-color: #8b6f00;
+  --link-color: #8b6f00; 
   --subtle-color: #444;
   --section-border: #8b6f00;
-}
+} */
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: #0f0f0f;
+  color: #e0e0e0;
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Toggle Button */
-.theme-toggle {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  background-color: var(--nav-color);
-  border: 2px solid var(--link-color);
-  color: var(--link-color);
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1000;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.theme-toggle:hover {
-  background-color: var(--link-color);
-  color: var(--bg-color);
-}
-
-/* Navbar */
+/* Navigation Bar Styling */
 .navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: var(--nav-color);
-  transition: background-color 0.3s, color 0.3s;
+  background-color: #1a1a1a;
   padding: 0.1rem 2rem;
   min-height: 1.5rem;
   position: sticky;
@@ -64,8 +41,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:var(--nav-color);
-  transition: background-color 0.3s, color 0.3s;
+  background-color: #1a1a1a;
   padding: 0.1rem 2rem;
   position: sticky;
   top: 0;
@@ -73,7 +49,7 @@ body {
 }
 
 .nav-logo {
-  color: var(--link-color);
+  color: #FFD700;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -86,26 +62,25 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: var(--text-color);
+  color: #e0e0e0;
   font-size: 1rem;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: var(--link-color);
+  color: #FFD700;
 }
 
-/* Hamburger (hidden by default) */
 .hamburger {
   display: none;
   font-size: 1.8rem;
   background: none;
   border: none;
-  color: var(--link-color);
+  color: #FFD700;
   cursor: pointer;
 }
 
-/* Responsive Navigation */
+/* Show hamburger and hide nav on mobile */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -121,7 +96,7 @@ body {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: var(--nav-color);
+    background-color: #1a1a1a;
     margin-top: 2.5rem;
   }
 
@@ -131,19 +106,17 @@ body {
 
   .nav-links li a {
     padding: 0.8rem 1rem;
-    border-bottom: 1px solid #444;
+    border-top: 1px solid #444;
   }
 }
 
-/* Header & Profile */
+/* Navbar end */
+
 header {
   text-align: left;
   padding: 3rem 4rem;
   max-width: 800px;
   margin: 2rem auto;
-}
-header p{
-  max-width: 500px;;
 }
 
 .prof_pic {
@@ -156,15 +129,14 @@ header p{
 h1 {
   font-size: 2.5rem;
   margin-bottom: 0.2rem;
-  color: var(--link-color);
+  color: #FFD700;
 }
 
 h2 {
-  color: var(--subtle-color);
+  color: #c0a060;
   font-weight: 300;
 }
 
-/* Sections */
 section {
   max-width: 800px;
   margin: 2rem auto;
@@ -174,22 +146,22 @@ section {
 .section-title {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
-  border-bottom: 2px solid var(--section-border);
+  border-bottom: 2px solid #FFD700;
   padding-bottom: 0.3rem;
-  color: var(--link-color);
+  color: #FFD700;
 }
 
 .span-title {
-  color: var(--link-color);
+  color: #FFD700;
 }
 
-/* Publications */
+/* Publication entries */
 .pubs_2025,
 .pubs_2024,
 .pubs_2023,
 .pubs_2022 {
   margin-top: 2rem;
-  border-bottom: 2px solid var(--section-border);
+  border-bottom: 2px solid #FFD700;
 }
 
 .publication {
@@ -200,20 +172,20 @@ section {
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 0.2rem;
-  color: var(--link-color);
+  color: #FFD700;
 }
 
 .authors {
   margin: 0;
   font-size: 0.95rem;
-  color: var(--subtle-color);
+  color: #aaa;
 }
 
 .venue,
 .date,
 .skills {
   font-size: 0.85rem;
-  color: var(--subtle-color);
+  color: #999;
   margin: 0.2rem 0;
 }
 
@@ -225,16 +197,17 @@ section {
 .abstract summary {
   cursor: pointer;
   font-weight: 500;
-  color: var(--link-color);
+  color: #FFD700;
   list-style: none;
 }
 
 .abstract p {
   margin-top: 0.4rem;
-  color: var(--subtle-color);
+  color: #ccc;
 }
 
-/* General Text & Links */
+/* Publication entries end */
+
 ul {
   list-style: none;
   padding: 0;
@@ -246,11 +219,11 @@ li {
 
 .project-title {
   font-weight: bold;
-  color: var(--link-color);
+  color: #FFD700;
 }
 
 a {
-  color: var(--link-color);
+  color: #FFD700;
   text-decoration: none;
 }
 
@@ -258,7 +231,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Responsive Adjustments */
+/* Responsive adjustments */
 @media (max-width: 1024px) {
   header {
     padding: 2rem;
@@ -290,6 +263,7 @@ a:hover {
   .nav-links li {
     width: 100%;
   }
+
   .nav-links li a {
     display: block;
     width: 100%;
@@ -311,9 +285,6 @@ a:hover {
   h1 {
     font-size: 2rem;
   }
-  .nav-logo {
-    font-size: 1.2rem;
-  }
 
   .section-title {
     font-size: 1.5rem;
@@ -331,6 +302,10 @@ a:hover {
 
   h1 {
     font-size: 1.7rem;
+  }
+
+  .nav-logo {
+    font-size: 1.2rem;
   }
 
   .nav-links li a {

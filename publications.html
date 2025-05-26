@@ -12,7 +12,8 @@
 
   <nav class="navbar_other">
     <div class="nav-logo">Aditya Vikram Singh</div>
-    <ul class="nav-links">
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="projects.html">Projects</a></li>
@@ -27,12 +28,13 @@
       <div class="section-title">Publications</div>
 
       <div class="pubs_2024">
-        <h2>2024</h2>
+        <h2>2025</h2>
 
         <article class="publication">
           <h3 class="title">Hierarchical Multi-agent Reinforcement Learning for Cyber Network Defense</h3>
           <p class="authors"><u>Aditya Vikram Singh</u>, Ethan Rathbun, Emma Graham, Lisa Oakley, Simona Boboila, Alina Oprea, Peter Chin</p>
-          <p class="venue"><em>Autonomous Agents and Multiagent Systems (AAMAS) 2025</em></p>
+          <!-- <p class="venue"><em>Full Paper, Reinforcement Learning Conference (RLC) 2025</em></p> -->
+          <p class="venue"><em>Extended Abstract, Autonomous Agents and Multiagent Systems (AAMAS) 2025</em></p>
           <p class="date"><em>28 October, 2024</em></p>
           <details class="abstract">
             <summary>Abstract</summary>
@@ -87,5 +89,28 @@
 
     </section>
   </main>
+  <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('nav-links');
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+      const toggleBtn = document.getElementById('theme-toggle');
+      const body = document.body;
+
+      // Load saved preference
+      if (localStorage.getItem("theme") === "light") {
+        body.classList.add("light-mode");
+        toggleBtn.textContent = "☀️";
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("light-mode");
+        const isLight = body.classList.contains("light-mode");
+        toggleBtn.textContent = isLight ? "☀️" : "🌙";
+        localStorage.setItem("theme", isLight ? "light" : "dark");
+      });
+  </script>
 </body>
 </html>
