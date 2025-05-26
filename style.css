@@ -61,6 +61,8 @@ body {
 header {
   text-align: left;
   padding: 3rem 4rem;
+  max-width: 800px;
+  margin: 2rem auto;
 }
 
 .prof_pic{
