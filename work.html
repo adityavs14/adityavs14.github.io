@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Aditya Vikram Singh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <nav class="navbar_other">
+    <div class="nav-logo">Aditya Vikram Singh</div>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="work.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <section>
+      <div class="section-title">Work Experience</div>
+
+        <div class="pubs_2025">
+
+            <article class="publication">
+                <h3 class="title">Junior Data Scientist</h3>
+                <!-- <p class="authors"><u>Rich Products Corporation</u></p> -->
+                <p class="venue"><em>Rich Products Corporation</em></p>
+                <p class="date"><em>Jul 2025 – Ongoing</em></p>
+                <!-- <p class="skills"><em>Python · PyTorch · Generative Adversarial Networks (GANs) · Digital Signal Processing</em></p> -->
+                <!-- <details class="abstract">
+                <summary>Details</summary>
+                <p>
+                    Designed custom GAN and Transformer-based Latent Diffusion architectures to generate high-fidelity synthetic ECG signals for medical data augmentation. Achieved 42% signal similarity improvement over classical GANs and outperformed U-Net LDMs by up to 95% across 8 evaluation metrics. Integrated the synthetic data into a downstream classification pipeline, improving heart disease detection accuracy by 20%.
+                </p>
+                </details> -->
+            </article>
+
+            <article class="publication">
+                <h3 class="title">Research Assistant</h3>
+                <!-- <p class="authors"><u>NDS2 Lab, Northeastern University</u></p> -->
+                <p class="venue"><em>NDS2 Lab, Northeastern University</em></p>
+                <p class="date"><em>May 2024 – Ongoing</em></p>
+                <!-- <p class="skills"><em>Python · PyTorch · Generative Adversarial Networks (GANs) · Digital Signal Processing</em></p> -->
+                <!-- <details class="abstract">
+                <summary>Details</summary>
+                <p>
+                    Designed custom GAN and Transformer-based Latent Diffusion architectures to generate high-fidelity synthetic ECG signals for medical data augmentation. Achieved 42% signal similarity improvement over classical GANs and outperformed U-Net LDMs by up to 95% across 8 evaluation metrics. Integrated the synthetic data into a downstream classification pipeline, improving heart disease detection accuracy by 20%.
+                </p>
+                </details> -->
+            </article>
+
+            
+
+        </div>
+
+
+
+
+    </section>
+  </main>
+  <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('nav-links');
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+      const toggleBtn = document.getElementById('theme-toggle');
+      const body = document.body;
+
+      // Load saved preference
+      if (localStorage.getItem("theme") === "light") {
+        body.classList.add("light-mode");
+        toggleBtn.textContent = "☀️";
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("light-mode");
+        const isLight = body.classList.contains("light-mode");
+        toggleBtn.textContent = isLight ? "☀️" : "🌙";
+        localStorage.setItem("theme", isLight ? "light" : "dark");
+      });
+  </script>
+</body>
+</html>
