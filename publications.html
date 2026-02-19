@@ -3,114 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications | Aditya Vikram Singh</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Publications — Aditya Vikram Singh</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
   <nav class="navbar_other">
     <div class="nav-logo">Aditya Vikram Singh</div>
-    <button class="hamburger" id="hamburger">&#9776;</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="publications.html">Publications</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
       <li><a href="work.html">Experience</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
   </nav>
 
+  <div class="page-wrap">
 
-  <main>
     <section>
       <div class="section-title">Publications</div>
 
-      <div class="pubs_2024">
-        <h2>2025</h2>
-
-        <article class="publication">
-          <h3 class="title">Hierarchical Multi-agent Reinforcement Learning for Cyber Network Defense</h3>
-          <p class="authors"><u>Aditya Vikram Singh</u>, Ethan Rathbun, Emma Graham, Lisa Oakley, Simona Boboila, Alina Oprea, Peter Chin</p>
-          <p class="venue"><em>Full Paper, Reinforcement Learning Conference (RLC) 2025</em></p>
-          <p class="venue"><em>Extended Abstract, Autonomous Agents and Multiagent Systems (AAMAS) 2025</em></p>
-          <p class="date"><em>28 October, 2024</em></p>
-          <details class="abstract">
-            <summary>Abstract</summary>
-            <p>
-              Recent advances in multi-agent reinforcement learning (MARL) have created opportunities to solve complex real-world tasks. Cybersecurity is a notable application area, where defending networks against sophisticated adversaries remains a challenging task typically performed by teams of security operators. In this work, we explore novel MARL strategies for building autonomous cyber network defenses that address challenges such as large policy spaces, partial observability, and stealthy, deceptive adversarial strategies. To facilitate efficient and generalized learning, we propose a hierarchical Proximal Policy Optimization (PPO) architecture that decomposes the cyber defense task into specific sub-tasks like network investigation and host recovery. Our approach involves training sub-policies for each sub-task using PPO enhanced with domain expertise. These sub-policies are then leveraged by a master defense policy that coordinates their selection to solve complex network defense tasks. Furthermore, the sub-policies can be fine-tuned and transferred with minimal cost to defend against shifts in adversarial behavior or changes in network settings. We conduct extensive experiments using CybORG Cage 4, the state-of-the-art MARL environment for cyber defense. Comparisons with multiple baselines across different adversaries show that our hierarchical learning approach achieves top performance in terms of convergence speed, episodic return, and several interpretable metrics relevant to cybersecurity, including the fraction of clean machines on the network, precision, and false positives on recoveries.
-            </p>
-          </details>
-        </article>
-        
+      <div class="year-group">
+        <div class="year-label">2025</div>
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">Hierarchical Multi-agent Reinforcement Learning for Cyber Network Defense</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u>, Ethan Rathbun, Emma Graham, Lisa Oakley, Simona Boboila, Alina Oprea, Peter Chin</p>
+            <p class="venue">Full Paper — Reinforcement Learning Conference (RLC) 2025</p>
+            <p class="venue">Extended Abstract — Autonomous Agents and Multiagent Systems (AAMAS) 2025</p>
+            <p class="date">28 October, 2024</p>
+            <details class="abstract">
+              <summary>Abstract</summary>
+              <p>
+                Recent advances in multi-agent reinforcement learning (MARL) have created opportunities to solve complex real-world tasks. Cybersecurity is a notable application area, where defending networks against sophisticated adversaries remains a challenging task typically performed by teams of security operators. In this work, we explore novel MARL strategies for building autonomous cyber network defenses that address challenges such as large policy spaces, partial observability, and stealthy, deceptive adversarial strategies. We propose a hierarchical Proximal Policy Optimization (PPO) architecture that decomposes the cyber defense task into specific sub-tasks like network investigation and host recovery, with sub-policies leveraged by a master defense policy for coordination. We conduct extensive experiments using CybORG Cage 4, achieving top performance in convergence speed, episodic return, and interpretable cybersecurity metrics.
+              </p>
+            </details>
+          </article>
+        </div>
       </div>
 
-      <div class="pubs_2022">
-        <h2>2022</h2>
-
-        <article class="publication">
-          <h3 class="title">ECG Based Biometric Recognition Using Similarity Measure and Feature Matching</h3>
-          <p class="authors"><u>Aditya Vikram Singh</u>, Ishita A. Kumar , Malaya Kumar Hota</p>
-          <p class="venue"><em>Innovations in Electrical and Electronic Engineering, Proceedings of ICEEE 2022</em></p>
-          <p class="date"><em>14 April, 2022</em></p>
-          <details class="abstract">
-            <summary>Abstract</summary>
-            <p>
-              Biometric Recognition is a widely used system in security systems around the world. It is considered to be a reliable method for a strong security system. ECG based biometric systems are not widely in use. In this paper, we propose a new way to build such a system which can either identify or verify a person’s identity. We have tested our system using ECG data provided in PhysioBank ATM.
-            </p>
-          </details>
-        </article>
+      <div class="year-group">
+        <div class="year-label">2022</div>
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">ECG Based Biometric Recognition Using Similarity Measure and Feature Matching</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u>, Ishita A. Kumar, Malaya Kumar Hota</p>
+            <p class="venue">Innovations in Electrical and Electronic Engineering, Proceedings of ICEEE 2022</p>
+            <p class="date">14 April, 2022</p>
+            <details class="abstract">
+              <summary>Abstract</summary>
+              <p>
+                Biometric Recognition is a widely used system in security systems around the world. ECG based biometric systems are not widely in use. In this paper, we propose a new way to build such a system which can either identify or verify a person's identity. We have tested our system using ECG data provided in PhysioBank ATM.
+              </p>
+            </details>
+          </article>
+        </div>
       </div>
-
     </section>
 
     <section>
       <div class="section-title">Patents</div>
 
-      <div class="pats_2024">
-        <h2>2024</h2>
-
-        <article class="publication">
-          <h3 class="title">Radial Basis Function Neural Network based Linearization for Thermistors using Instrumentation Amplifier</h3>
-          <p class="authors"><u>Aditya Vikram Singh</u>, Vaegae Naveen Kumar</p>
-          <p class="venue"><em>Patent pending, Indian Patent Application No. 202441029382</em></p>
-          <p class="date"><em>11 April, 2024</em></p>
-          <!-- <details class="abstract">
-            <summary>Abstract</summary>
-            <p>
-              Recent advances in multi-agent reinforcement learning (MARL) have created opportunities to solve complex real-world tasks. Cybersecurity is a notable application area, where defending networks against sophisticated adversaries remains a challenging task typically performed by teams of security operators. In this work, we explore novel MARL strategies for building autonomous cyber network defenses that address challenges such as large policy spaces, partial observability, and stealthy, deceptive adversarial strategies. To facilitate efficient and generalized learning, we propose a hierarchical Proximal Policy Optimization (PPO) architecture that decomposes the cyber defense task into specific sub-tasks like network investigation and host recovery. Our approach involves training sub-policies for each sub-task using PPO enhanced with domain expertise. These sub-policies are then leveraged by a master defense policy that coordinates their selection to solve complex network defense tasks. Furthermore, the sub-policies can be fine-tuned and transferred with minimal cost to defend against shifts in adversarial behavior or changes in network settings. We conduct extensive experiments using CybORG Cage 4, the state-of-the-art MARL environment for cyber defense. Comparisons with multiple baselines across different adversaries show that our hierarchical learning approach achieves top performance in terms of convergence speed, episodic return, and several interpretable metrics relevant to cybersecurity, including the fraction of clean machines on the network, precision, and false positives on recoveries.
-            </p>
-          </details> -->
-        </article>
-        
+      <div class="year-group">
+        <div class="year-label">2024</div>
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">Radial Basis Function Neural Network based Linearization for Thermistors using Instrumentation Amplifier</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u>, Vaegae Naveen Kumar</p>
+            <p class="venue">Patent pending — Indian Patent Application No. 202441029382</p>
+            <p class="date">11 April, 2024</p>
+          </article>
+        </div>
       </div>
-
-
     </section>
-  </main>
+
+  </div>
+
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+
   <script>
-      const hamburger = document.getElementById('hamburger');
-      const navLinks = document.getElementById('nav-links');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('show'));
 
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-      });
-      const toggleBtn = document.getElementById('theme-toggle');
-      const body = document.body;
-
-      // Load saved preference
-      if (localStorage.getItem("theme") === "light") {
-        body.classList.add("light-mode");
-        toggleBtn.textContent = "☀️";
-      }
-
-      toggleBtn.addEventListener("click", () => {
-        body.classList.toggle("light-mode");
-        const isLight = body.classList.contains("light-mode");
-        toggleBtn.textContent = isLight ? "☀️" : "🌙";
-        localStorage.setItem("theme", isLight ? "light" : "dark");
-      });
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body      = document.body;
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      toggleBtn.textContent = '☀️';
+    }
+    toggleBtn.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark-mode');
+      toggleBtn.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
   </script>
+
 </body>
 </html>

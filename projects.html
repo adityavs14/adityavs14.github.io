@@ -3,192 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Aditya Vikram Singh</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Projects — Aditya Vikram Singh</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
   <nav class="navbar_other">
     <div class="nav-logo">Aditya Vikram Singh</div>
-    <button class="hamburger" id="hamburger">&#9776;</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="work.html">Experience</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
   </nav>
 
-
-  <main>
+  <div class="page-wrap">
     <section>
       <div class="section-title">Projects</div>
 
-        <div class="pubs_2025">
+      <div class="year-label">2024 – 2025</div>
+      <div class="experience-grid">
 
-            <article class="publication">
-                <h3 class="title">Generation of Synthetic ECG Data for Augmentation</h3>
-                <p class="authors"><u>Aditya Vikram Singh</u></p>
-                <p class="venue"><em>Northeastern University</em></p>
-                <p class="date"><em>Sep 2024 – Apr 2025</em></p>
-                <!-- <p class="skills"><em>Python · PyTorch · Generative Adversarial Networks (GANs) · Digital Signal Processing</em></p> -->
-                <details class="abstract">
-                <summary>Details</summary>
-                <p>
-                    Designed custom GAN and Transformer-based Latent Diffusion architectures to generate high-fidelity synthetic ECG signals for medical data augmentation. Achieved 42% signal similarity improvement over classical GANs and outperformed U-Net LDMs by up to 95% across 8 evaluation metrics. Integrated the synthetic data into a downstream classification pipeline, improving heart disease detection accuracy by 20%.
-                </p>
-                </details>
-            </article>
-
-            <article class="publication">
-                <h3 class="title">Emotion-Driven Audio-Visual Experience System</h3>
-                <p class="authors"><u>Aditya Vikram Singh</u>, Shisir Kallapur, Yifan Tang, Ankit Gundewar</p>
-                <p class="venue"><em>AI for HCI, Northeastern University</em></p>
-                <p class="date"><em>Jan 2025 – Apr 2025</em></p>
-                <details class="abstract">
-                <summary>Details</summary>
-                <p>
-                    Developed a real-time AI system combining emotion recognition, RAG-based LLM inference, and generative audio-visual media. Integrated memory-augmented feedback for dynamic emotional adaptation. Improved user emotional resonance by 56% and satisfaction by 67% in pilot studies, showcasing the power of personalized, adaptive multimedia environments.
-                </p>
-                </details>
-            </article>
-
-            <article class="publication">
-                <h3 class="title">Adaptive Difficulty: Leveraging Reinforcement Learning for Player-Driven Immersion</h3>
-                <p class="authors"><u>Aditya Vikram Singh</u>, Shishir Kallapur, Ghasif Syed, Ankit Gundewar</p>
-                <p class="venue"><em>Northeastern University</em></p>
-                <p class="date"><em>Sep 2023 – Dec 2023</em></p>
-                <details class="abstract">
-                <summary>Details</summary>
-                <p>
-                    Designed a custom game environment in Python using PyGame and implemented Deep RL and Adversarial RL agents to dynamically adapt game level difficulty based on player skill. Demonstrated the potential of reinforcement learning for immersive, user-driven game experience tuning.
-                </p>
-                </details>
-            </article>
-
-            <article class="publication">
-                <h3 class="title">Advanced Image Processing Application</h3>
-                <p class="authors"><u>Aditya Vikram Singh</u>, Abhinav Dholi</p>
-                <p class="venue"><em>Northeastern University</em></p>
-                <p class="date"><em>Sep 2023 – Dec 2023</em></p>
-                <details class="abstract">
-                <summary>Details</summary>
-                <p>
-                    Built an advanced image processing tool in Java using the MVC design pattern. Applied object-oriented principles to build a scalable and extensible framework for applying filters, transformations, and enhancements. Designed with future extensibility for UI components and additional I/O modules.
-                </p>
-                </details>
-            </article>
-
-            <article class="publication">
-                <h3 class="title">A Novel Neural Network Architecture to Solve Linear and Non-Linear Gates</h3>
-                <p class="authors"><u>Aditya Vikram Singh</u>, Vaegae Naveen Kumar</p>
-                <p class="venue"><em>VIT Vellore</em></p>
-                <p class="date"><em>Jun 2022 – Dec 2022</em></p>
-                <details class="abstract">
-                    <summary>Details</summary>
-                    <p>
-                    Designed a compact neural network architecture using MATLAB that accurately models both linear and non-linear logic gates. The architecture demonstrated robust performance on high-dimensional datasets and maintained high accuracy with significantly fewer neurons. Applicable to high-density, resource-constrained AI systems, this model improves training efficiency without sacrificing predictive capability.
-                    </p>
-                </details>
-            </article>
-
-            <article class="publication">
-                <h3 class="title">An Information Theory Approach to Wordle</h3>
-                <p class="authors"><u>Aditya Vikram Singh</u>, Thilak Mohan, Samanyu Okade, Hritika Rathi</p>
-                <p class="venue"><em>VIT Vellore</em></p>
-                <p class="date"><em>Jul 2022 – Nov 2022</em></p>
-                <details class="abstract">
-                    <summary>Details</summary>
-                    <p>
-                    Developed an efficient solver for the game Wordle using concepts from information theory and probability. The system selects guesses that maximize expected information gain, leveraging unigram frequency distributions to prioritize likely solutions. The method reliably solves Wordle puzzles in an average of 3–4 attempts, showcasing the power of entropy-based search in constrained decision spaces.
-                    </p>
-                </details>
-            </article>
-
-            <article class="publication">
-                <h3 class="title">Land Built-Up Classification using Neural Networks</h3>
-                <p class="authors"><u>Aditya Vikram Singh</u></p>
-                <p class="venue"><em>VIT Vellore</em></p>
-                <p class="date"><em>Mar 2022 – Apr 2022</em></p>
-                <details class="abstract">
-                    <summary>Details</summary>
-                    <p>
-                    Focused on classifying urban built-up areas using neural networks trained on labeled ground truth datasets derived from K-means and Maximum Likelihood classifications. Integrated geographic data with neural architectures to automate land-use mapping across cities. The model demonstrated effective generalization across urban landscapes and provided scalable classification when applied on Google Earth Engine datasets.
-                    </p>
-                </details>
-            </article>
-
-            <article class="publication">
-                <h3 class="title">Music Automation using Real-Time Emotion Detection</h3>
-                <p class="authors"><u>Aditya Vikram Singh</u>Arindam Bhattarcharya, Ankita Mandal</p>
-                <p class="venue"><em>VIT Vellore</em></p>
-                <p class="date"><em>Mar 2022 – Apr 2022</em></p>
-                <details class="abstract">
-                    <summary>Details</summary>
-                    <p>
-                    Built a music recommendation system driven by real-time emotion detection using machine learning and OpenCV. The system captures facial expressions and classifies emotional states, recommending mood-aligned songs accordingly. Developed and trained the emotion detection model using deep learning techniques and integrated it with a dynamic music recommendation pipeline.
-                    </p>
-                </details>
-            </article>
-
-            <article class="publication">
-                <h3 class="title">IoT-Based Wrist Band for Stress Detection and Workplace Environment Analysis</h3>
-                <p class="authors"><u>Aditya Vikram Singh</u></p>
-                <p class="venue"><em>VIT Vellore</em></p>
-                <p class="date"><em>Oct 2021 – Dec 2021</em></p>
-                <details class="abstract">
-                    <summary>Details</summary>
-                    <p>
-                    Developed an IoT-enabled wearable wristband capable of detecting user stress levels by analyzing biometric signals in real time. The system used neural networks to classify physiological data and provided feedback for workplace stress analysis. Integrated machine learning algorithms with embedded signal processing to deliver accurate and responsive monitoring in occupational settings.
-                    </p>
-                </details>
-            </article>
-
-            <article class="publication">
-                <h3 class="title">Accident Detection and Alert System using AT89C51 and Raspberry Pi</h3>
-                <p class="authors"><u>Aditya Vikram Singh</u>, Guru Athavan</p>
-                <p class="venue"><em>VIT Vellore</em></p>
-                <p class="date"><em>Apr 2021 – Jun 2021</em></p>
-                <details class="abstract">
-                    <summary>Details</summary>
-                    <p>
-                    Designed and implemented an embedded system to detect vehicular accidents and trigger real-time alerts using the AT89C51 microcontroller and Raspberry Pi. The system simulated crash detection in Proteus and utilized GPIO-based sensors to transmit location data upon impact. It served as a low-cost prototype for emergency response systems in smart vehicles.
-                    </p>
-                </details>
-            </article>
-
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">Generation of Synthetic ECG Data for Augmentation</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u></p>
+            <p class="venue">Northeastern University</p>
+            <p class="date">Sep 2024 – Apr 2025</p>
+            <details class="abstract">
+              <summary>Details</summary>
+              <p>Designed custom GAN and Transformer-based Latent Diffusion architectures to generate high-fidelity synthetic ECG signals for medical data augmentation. Achieved 42% signal similarity improvement over classical GANs and outperformed U-Net LDMs by up to 95% across 8 evaluation metrics. Integrated the synthetic data into a downstream classification pipeline, improving heart disease detection accuracy by 20%.</p>
+            </details>
+          </article>
         </div>
 
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">Emotion-Driven Audio-Visual Experience System</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u>, Shisir Kallapur, Yifan Tang, Ankit Gundewar</p>
+            <p class="venue">AI for HCI, Northeastern University</p>
+            <p class="date">Jan 2025 – Apr 2025</p>
+            <details class="abstract">
+              <summary>Details</summary>
+              <p>Developed a real-time AI system combining emotion recognition, RAG-based LLM inference, and generative audio-visual media. Integrated memory-augmented feedback for dynamic emotional adaptation. Improved user emotional resonance by 56% and satisfaction by 67% in pilot studies.</p>
+            </details>
+          </article>
+        </div>
 
+      </div>
 
+      <div class="year-label" style="margin-top:2rem;">2023</div>
+      <div class="experience-grid">
+
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">Adaptive Difficulty: Leveraging Reinforcement Learning for Player-Driven Immersion</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u>, Shishir Kallapur, Ghasif Syed, Ankit Gundewar</p>
+            <p class="venue">Northeastern University</p>
+            <p class="date">Sep 2023 – Dec 2023</p>
+            <details class="abstract">
+              <summary>Details</summary>
+              <p>Designed a custom game environment in Python using PyGame and implemented Deep RL and Adversarial RL agents to dynamically adapt game level difficulty based on player skill. Demonstrated the potential of reinforcement learning for immersive, user-driven game experience tuning.</p>
+            </details>
+          </article>
+        </div>
+
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">Advanced Image Processing Application</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u>, Abhinav Dholi</p>
+            <p class="venue">Northeastern University</p>
+            <p class="date">Sep 2023 – Dec 2023</p>
+            <details class="abstract">
+              <summary>Details</summary>
+              <p>Built an advanced image processing tool in Java using the MVC design pattern. Applied object-oriented principles to build a scalable and extensible framework for applying filters, transformations, and enhancements.</p>
+            </details>
+          </article>
+        </div>
+
+      </div>
+
+      <div class="year-label" style="margin-top:2rem;">2022</div>
+      <div class="experience-grid">
+
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">A Novel Neural Network Architecture to Solve Linear and Non-Linear Gates</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u>, Vaegae Naveen Kumar</p>
+            <p class="venue">VIT Vellore</p>
+            <p class="date">Jun 2022 – Dec 2022</p>
+            <details class="abstract">
+              <summary>Details</summary>
+              <p>Designed a compact neural network architecture using MATLAB that accurately models both linear and non-linear logic gates. The architecture demonstrated robust performance on high-dimensional datasets with significantly fewer neurons.</p>
+            </details>
+          </article>
+        </div>
+
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">An Information Theory Approach to Wordle</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u>, Thilak Mohan, Samanyu Okade, Hritika Rathi</p>
+            <p class="venue">VIT Vellore</p>
+            <p class="date">Jul 2022 – Nov 2022</p>
+            <details class="abstract">
+              <summary>Details</summary>
+              <p>Developed an efficient solver for Wordle using concepts from information theory and probability. The system selects guesses that maximize expected information gain, reliably solving Wordle puzzles in an average of 3–4 attempts.</p>
+            </details>
+          </article>
+        </div>
+
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">Land Built-Up Classification using Neural Networks</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u></p>
+            <p class="venue">VIT Vellore</p>
+            <p class="date">Mar 2022 – Apr 2022</p>
+            <details class="abstract">
+              <summary>Details</summary>
+              <p>Focused on classifying urban built-up areas using neural networks trained on labeled ground truth datasets derived from K-means and Maximum Likelihood classifications. Applied on Google Earth Engine datasets.</p>
+            </details>
+          </article>
+        </div>
+
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">Music Automation using Real-Time Emotion Detection</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u>, Arindam Bhattarcharya, Ankita Mandal</p>
+            <p class="venue">VIT Vellore</p>
+            <p class="date">Mar 2022 – Apr 2022</p>
+            <details class="abstract">
+              <summary>Details</summary>
+              <p>Built a music recommendation system driven by real-time emotion detection using machine learning and OpenCV. The system captures facial expressions and classifies emotional states, recommending mood-aligned songs accordingly.</p>
+            </details>
+          </article>
+        </div>
+
+      </div>
+
+      <div class="year-label" style="margin-top:2rem;">2021</div>
+      <div class="experience-grid">
+
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">IoT-Based Wrist Band for Stress Detection and Workplace Environment Analysis</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u></p>
+            <p class="venue">VIT Vellore</p>
+            <p class="date">Oct 2021 – Dec 2021</p>
+            <details class="abstract">
+              <summary>Details</summary>
+              <p>Developed an IoT-enabled wearable wristband capable of detecting user stress levels by analyzing biometric signals in real time, using neural networks to classify physiological data.</p>
+            </details>
+          </article>
+        </div>
+
+        <div class="glass-card">
+          <article class="publication">
+            <h3 class="title">Accident Detection and Alert System using AT89C51 and Raspberry Pi</h3>
+            <p class="authors"><u>Aditya Vikram Singh</u>, Guru Athavan</p>
+            <p class="venue">VIT Vellore</p>
+            <p class="date">Apr 2021 – Jun 2021</p>
+            <details class="abstract">
+              <summary>Details</summary>
+              <p>Designed and implemented an embedded system to detect vehicular accidents and trigger real-time alerts using the AT89C51 microcontroller and Raspberry Pi, serving as a low-cost prototype for emergency response systems.</p>
+            </details>
+          </article>
+        </div>
+
+      </div>
 
     </section>
-  </main>
+  </div>
+
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+
   <script>
-      const hamburger = document.getElementById('hamburger');
-      const navLinks = document.getElementById('nav-links');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('show'));
 
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-      });
-      const toggleBtn = document.getElementById('theme-toggle');
-      const body = document.body;
-
-      // Load saved preference
-      if (localStorage.getItem("theme") === "light") {
-        body.classList.add("light-mode");
-        toggleBtn.textContent = "☀️";
-      }
-
-      toggleBtn.addEventListener("click", () => {
-        body.classList.toggle("light-mode");
-        const isLight = body.classList.contains("light-mode");
-        toggleBtn.textContent = isLight ? "☀️" : "🌙";
-        localStorage.setItem("theme", isLight ? "light" : "dark");
-      });
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body      = document.body;
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      toggleBtn.textContent = '☀️';
+    }
+    toggleBtn.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark-mode');
+      toggleBtn.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
   </script>
+
 </body>
 </html>

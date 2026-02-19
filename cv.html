@@ -3,63 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV | Aditya Vikram Singh</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>CV — Aditya Vikram Singh</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  
-
   <nav class="navbar_other">
     <div class="nav-logo">Aditya Vikram Singh</div>
-    <button class="hamburger" id="hamburger">&#9776;</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="work.html">Experience</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="cv.html">CV</a></li>
+      <li><a href="cv.html" class="active">CV</a></li>
     </ul>
   </nav>
 
-
-  <main>
+  <div class="page-wrap">
     <section>
       <div class="section-title">Curriculum Vitae</div>
-      <p>You can download my full CV <a href="assets/AdityaVikramSingh_Resume_New.pdf" target="_blank">here</a>.</p>
-      <p>Summary:</p>
-      <ul>
-        <li>MS in AI – Northeastern University</li>
-        <li> Junior Data Scientist – Rich Products Corporation</li>
-        <li>Researcher – Cybersecurity & Privacy Institute</li>
-        <li>Expertise – Multi-Agent RL, Generative AI, Cybersecurity, LLMs, GenAI</li>
-      </ul>
+
+      <div class="glass-card">
+        <p style="font-size:0.82rem; color:var(--ink-mid); margin-bottom:1.5rem;">
+          A brief summary of my background and expertise. Download the full document below.
+        </p>
+
+        <ul class="cv-summary">
+          <li>MS in Artificial Intelligence — Northeastern University</li>
+          <li>Junior Data Scientist — Rich Products Corporation</li>
+          <li>Research Assistant — NDS2 Lab / Cybersecurity &amp; Privacy Institute</li>
+          <li>Multi-Agent Reinforcement Learning &amp; Cyber Defense</li>
+          <li>Generative AI · LLMs · Signal Processing</li>
+        </ul>
+
+        <a class="cv-download" href="assets/AdityaVikramSingh_Resume_New.pdf" target="_blank">
+          ↓ Download Full CV
+        </a>
+      </div>
     </section>
-  </main>
+  </div>
+
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+
   <script>
-      const hamburger = document.getElementById('hamburger');
-      const navLinks = document.getElementById('nav-links');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('show'));
 
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-      });
-      const toggleBtn = document.getElementById('theme-toggle');
-      const body = document.body;
-
-      // Load saved preference
-      if (localStorage.getItem("theme") === "light") {
-        body.classList.add("light-mode");
-        toggleBtn.textContent = "☀️";
-      }
-
-      toggleBtn.addEventListener("click", () => {
-        body.classList.toggle("light-mode");
-        const isLight = body.classList.contains("light-mode");
-        toggleBtn.textContent = isLight ? "☀️" : "🌙";
-        localStorage.setItem("theme", isLight ? "light" : "dark");
-      });
-
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body      = document.body;
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      toggleBtn.textContent = '☀️';
+    }
+    toggleBtn.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark-mode');
+      toggleBtn.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
   </script>
+
 </body>
 </html>
